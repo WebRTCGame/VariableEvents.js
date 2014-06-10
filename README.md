@@ -20,3 +20,26 @@ Let's say you're making a game and you want to have a HP var on your character l
 You can constantly check in your update loop to make sure it's updated, or you can just use this and have it automatically update any time the HP var on the character changes.
 
 Neat stuff.
+
+example:
+
+
+```javascript
+  var o = function (){};
+  
+  
+  addProp.add(o, "fun", 5, function (x) {
+      alert("it's retreived as " + x); //event for when it's set, this case the default of 5
+  }, function (x) {
+      alert("it's changed to " + x); //event when it's changed
+  }, function (x) {
+      return x * 10; // modifier of the set value
+  }, function (x) {
+      return x / 5; // modifier of the return value
+  });
+  
+  alert("Value of fun: " + o.fun); //
+  o.fun = 6; //change var to 6, but is then modified by the set modifier function above
+  alert("Value of fun: " + o.fun); //return value after modified by return value modifier
+  o.fun = 7; //change var to 7 which is then modified
+```
