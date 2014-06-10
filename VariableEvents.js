@@ -1,4 +1,4 @@
-var addProp = (function () {
+var VariableEvents = (function () {
 
     return {
         add: function (obj, propname, defaultValue, getCB, setCB, modGet, modSet) {
