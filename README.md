@@ -10,7 +10,7 @@ A property is accessed.
 A property is set/changed.
 
 
-Example fiddle: http://jsfiddle.net/x9EmX/12/
+Example fiddle: http://jsfiddle.net/x9EmX/13/
 
 It simply uses Object.defineProperty
 
