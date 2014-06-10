@@ -28,7 +28,7 @@ example:
   var o = function () {};
   
   
-  addProp(o, "fun", 5, function (x) {
+  VariableEvents(o, "fun", 5, function (x) {
       alert("it's retreived as " + x); //event for when it's set, this case the default of 5
   }, function (x) {
       alert("it's changed to " + x); //event when it's changed
