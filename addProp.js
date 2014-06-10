@@ -2,6 +2,7 @@ var addProp = (function () {
 
     return {
         add: function (obj, propname, defaultValue, getCB, setCB, modGet, modSet) {
+            'use strict';
             var i = "_" + propname.toString(),
                 f = 'function';
             obj[i] = {
