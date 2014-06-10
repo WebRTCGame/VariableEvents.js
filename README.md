@@ -10,7 +10,7 @@ A property is accessed.
 A property is set/changed.
 
 
-Example fiddle: http://jsfiddle.net/x9EmX/13/
+Example fiddle: http://jsfiddle.net/x9EmX/14/
 
 It simply uses Object.defineProperty
 
@@ -25,10 +25,10 @@ example:
 
 
 ```javascript
-  var o = function (){};
+  var o = function () {};
   
   
-  addProp.add(o, "fun", 5, function (x) {
+  addProp(o, "fun", 5, function (x) {
       alert("it's retreived as " + x); //event for when it's set, this case the default of 5
   }, function (x) {
       alert("it's changed to " + x); //event when it's changed
@@ -38,8 +38,11 @@ example:
       return x / 5; // modifier of the return value
   });
   
-  alert("Value of fun: " + o.fun); //
+  alert("Value of fun: " + o.fun); //accessed and modified
+  
   o.fun = 6; //change var to 6, but is then modified by the set modifier function above
+  
   alert("Value of fun: " + o.fun); //return value after modified by return value modifier
+  
   o.fun = 7; //change var to 7 which is then modified
 ```
