@@ -12,7 +12,7 @@ A property is set/changed.
 
 Example fiddle: http://jsfiddle.net/x9EmX/15/
 
-Example linking a <progress> element to a variable: http://jsfiddle.net/BBs7Q/
+Example linking a progress element to a variable: http://jsfiddle.net/BBs7Q/
 
 It simply uses Object.defineProperty
 
